@@ -4,3 +4,32 @@
 @theme {
   --font-boldonse: "Boldonse", sans-serif;
 }
+
+@layer utilities {
+  .trim-text {
+    text-box-trim: both;
+    text-box-edge: cap alphabetic;
+  }
+
+  /* Fallback for browsers without text-box-trim support */
+  @supports not (text-box-trim: both) {
+    .trim-text {
+      display: block;
+      line-height: 1;
+      position: relative;
+    }
+    .trim-text::before,
+    .trim-text::after {
+      content: "";
+      display: block;
+      height: 0;
+      width: 0;
+    }
+    .trim-text::before {
+      margin-bottom: calc(-0.25em);
+    }
+    .trim-text::after {
+      margin-top: calc(-0.25em);
+    }
+  }
+}
