@@ -8,6 +8,9 @@ importers:
 
   .:
     dependencies:
+      '@fontsource/boldonse':
+        specifier: ^5.2.4
+        version: 5.2.4
       '@tailwindcss/vite':
         specifier: ^4.1.18
         version: 4.1.18(vite@7.3.0(@types/node@24.10.4)(jiti@2.6.1)(lightningcss@1.30.2))
@@ -275,6 +278,9 @@ packages:
     engines: {node: '>=18'}
     cpu: [x64]
     os: [win32]
+
+  '@fontsource/boldonse@5.2.4':
+    resolution: {integrity: sha512-lQ1G54LKtnXDdmTY3F6TEnn3husTQ4EkAJcAfG8T/M98WZhG4stgvr8fA5drv/tbZP0ij+mU7iqtvqCjy4/JOQ==}
 
   '@img/colour@1.0.0':
     resolution: {integrity: sha512-A5P/LfWGFSl6nsckYtjw9da+19jB8hkJ6ACTGcDfEJ0aE+l2n2El7dsVM7UVHZQ9s2lmYMWlrS21YLy2IR1LUw==}
@@ -1206,6 +1212,8 @@ snapshots:
 
   '@esbuild/win32-x64@0.27.2':
     optional: true
+
+  '@fontsource/boldonse@5.2.4': {}
 
   '@img/colour@1.0.0': {}
 
